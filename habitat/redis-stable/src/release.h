@@ -1,0 +1,3 @@
+#define REDIS_GIT_SHA1 "3b5d3212"
+#define REDIS_GIT_DIRTY "67"
+#define REDIS_BUILD_ID "ossnode4-1506058705"
