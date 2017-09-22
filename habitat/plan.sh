@@ -4,7 +4,7 @@ pkg_version="0.1.0"
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_license=('Apache-2.0')
 pkg_source="https://github.com/kbhimanavarjula/VotingApp"
-pkg_build_deps=(core/git core/virtualenv)
+pkg_build_deps=(core/git)
 pkg_deps=(core/coreutils core/python2 core/redis core/make core/gcc)
 pkg_exports=([port]=port)
 pkg_exposes=(port)
@@ -14,8 +14,8 @@ pkg_binds=()
 do_download()
 {
         build_line "do_download() =================================================="
-	wget http://download.redis.io/redis-stable.tar.gz
-	tar xzf redis-stable.tar.gz
+#	wget http://download.redis.io/redis-stable.tar.gz
+#	tar xzf redis-stable.tar.gz
 #	cd redis-stable
 #	make
         return 0
